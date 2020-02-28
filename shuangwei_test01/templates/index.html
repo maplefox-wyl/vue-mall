@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+</head>
+<body>
+<div class="container">
+    <!--<form action="" class="parent">-->
+        <!--<input type="text" class="search" placeholder="查询">-->
+        <!--<input type="button" name="" id="" class="btn">-->
+    <!--</form>-->
+    <div class="container" style="z-index: 999" id="searchDiv">
+        <div class="keyword-search">
+            查找：
+            <input id="key" type="text" style="width: 200px;" placeholder="关键词" />
+            <a href="javascript:void(0);" class="prev" onclick='wordSearch(1)'><i class="c-icon"></i></a>
+            <a href="javascript:void(0);" class="next" onclick='wordSearch()'><i class="c-icon"></i></a>
+            <input type="button" name="" id="" class="btn">
+        </div>
+    </div>
+    <form action="/test01/index" method="post">
+    <div>
+        <li>
+            <label for="id_name">用户名</label>
+            <input type="text" class="username" name="username" placeholder="请输入用户名" required maxlength="11"/>
+            <div class="clear"></div>
+        </li>
+        <li>
+            <label for="id_password1">密码</label>
+            <input type="text" class="password1" name="password1" placeholder="请输入密码" required maxlength="11"/>
+            <div class="clear"></div>
+        </li>
+
+
+
+
+</div>
+
+</body>
+</html>

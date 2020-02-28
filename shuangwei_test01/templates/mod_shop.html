@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改商品</title>
+</head>
+<body>
+<form action="shop/mod/{{ shop.id }}" method="post">
+    <div>商品编号：{{ shop.id }}</div>
+    <div>商品名称：{{ shop.name }}</div>
+    <div>商品数量：{{ shop.number }}</div>
+    <div>商品价格：{{ shop.price }}</div>
+    <div>
+        修改数量：<input type="text" name="market_num" value="{{ shop.market_num }}" placeholder="数量">
+    </div>
+    <div>
+        修改价格：<input type="text" name="market_price" value="{{ shop.market_price }}" placeholder="单价">
+    </div>
+    <div>
+        <input type="submit" value="确认修改">
+    </div>
+</form>
+</body>
+</html>

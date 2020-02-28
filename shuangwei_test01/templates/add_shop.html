@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>增加新商品</title>
+    <style>
+        div > label {
+            display: inline-block;
+            width: 70px;
+        }
+
+        div {
+            margin: 5px 0px;
+        }
+    </style>
+</head>
+<body>
+<form action="/shop/add_shop" method="post">
+    <div>
+        <label for="id">商品编号</label>
+        <input type="text" name="id",placeholde="请输入商品编号",>
+    </div>
+    <div>
+        <label for="name">商品名称</label>
+        <input type="text" name="name",placeholde="请输入商品名称",>
+    </div>
+    <div>
+        <label for="number">商品数量</label>
+        <input type="text" name="number",placeholde="请输入商品数量",>
+    </div>
+    <div>
+        <label for="price">商品单价</label>
+        <input type="text" name="price",placeholde="请输入商品单价",>
+    </div>
+    <div>
+        <input type="submit" value="添加新书">
+    </div>
+</form>
+</body>
+</html>
